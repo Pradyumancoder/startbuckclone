@@ -1,12 +1,11 @@
 import React from 'react'
 
-function index() {
+const AllRoute = () => {
   return (
     <div>
-     <h1>hiii</h1> 
-
+      
     </div>
   )
 }
 
-export default index
+export default AllRoute
