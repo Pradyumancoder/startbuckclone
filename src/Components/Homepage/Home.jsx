@@ -1,11 +1,14 @@
 import { Card, Carousel } from 'flowbite-react'
 import React from 'react'
 import FooterP from '../Footer/FooterP'
-import Footer from '../Footer/FooterP'
+import Navbars from '../Navbar/Navbars'
 
 function Home() {
   return (
     <div className='border border-b-red-800 h-fit'>
+      <div>
+        <Navbars/>
+      </div>
             <div className='font-sans font-medium leading-7 text-start text-2xl'><h1>Handcrafted Curations</h1></div>
        <div className='border border-black h-40  flex justify-around mt-6 font-normal leading-5 text-base'>
            <div className='h-24 w-24 border border-blue-700 rounded-full'>
@@ -194,9 +197,9 @@ function Home() {
        {/* *************************************************************************************end  */}
 
        <div>
-
-        <div className='p-10'>
-
+        <div className='p-10 bg-gray-300'>
+       
+       <div className='font-sans font-medium leading-7 text-start text-2xl mb-10'><h1>Learn more about the world of coffee!</h1></div>
           <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/pexels_denys_gromov_4765838_2_be7bc79560.jpg" alt="" />
     
            </div>
@@ -207,7 +210,7 @@ function Home() {
            {/* footer  */}
 
 
-<div>
+<div className='mt-6'>
   <FooterP/>
   </div>          
        </div>
