@@ -39,7 +39,7 @@ function Home() {
 
       {/* carousel started  */}
 
-      <div className='font-sans font-medium leading-7 text-start text-2xl'><h1>Handcrafted Curations</h1></div>
+      <div className='font-sans font-medium leading-7 text-start text-2xl'><h1>Handcrafted</h1></div>
       <div className='border border-red-800 flex space-x-10 justify-center '>
 
         <div className='h-[200px] w-[350px] border border-black bg-white '>

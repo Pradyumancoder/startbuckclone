@@ -11,60 +11,76 @@ function Order() {
 
     bestseller: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/17d2c94d_1bbe_47d5_874c_c32af5bb2c18_fc9ce3422f.png',
-        title: 'India Exclusive',
-        description: 'Bring in the festive season and make each celebration memorable.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100501.jpg',
+        title: 'Java Chip Frappuccino',
+        ptag:"TALL(354 ML) .392 kcal",
+        description: 'We blend mocha sauce and Frappuccino® chips with Frappuccino....',
+        price:123
       },
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/71d3780c_be6e_46b1_ab01_8a2bce244a7f_1_26502c2483.png',
-        title: 'Starbucks Coffee',
-        description: 'Starbucks is best when shared. Treat your pals to a good cup of coffee.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100433.jpg',
+        title: 'Caffe Americano',
+        ptag:"SHORT(237 Ml) .0 kcal",
+        description: 'Rich in flavour, full-bodied espresso with hot water in true...',
+        price:123
       }
     ],
     drinks: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/17d2c94d_1bbe_47d5_874c_c32af5bb2c18_fc9ce3422f.png',
-        title: 'India Exclusive',
-        description: 'Bring in the festive season and make each celebration memorable.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113842.jpg',
+        title: 'Belgium Chocolate Latte',
+        ptag:"SHORT(237 ML) .235 Kcal",
+        description: 'Espresso with richly flavoured Belgium chocolate sauce, moch...',
+        price:123
       },
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/71d3780c_be6e_46b1_ab01_8a2bce244a7f_1_26502c2483.png',
-        title: 'Starbucks Coffee',
-        description: 'Starbucks is best when shared. Treat your pals to a good cup of coffee.'
-      }
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113842.jpg',
+        title: 'Belgium Chocolate Latte',
+        ptag:"SHORT(237 ML) .235 Kcal",
+        description: 'Espresso with richly flavoured Belgium chocolate sauce, moch...',
+        price:123
+      },
     ],
     food: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/97ee3280_2f05_43ad_bd94_f5c184d4f502_1_2d1b049023.png',
-        title: 'Congrats',
-        description: 'Coffee. Cheer. Celebrate. Enjoy each of your special moments with Starbucks.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/104108.jpg',
+        title: 'Chilli Cheese Toast',
+        ptag:"PER SERVE (140 g) - 471 Kcal",
+        description: 'Cheesy and fiery snack on a toasted French-style baguette, t...',
+        price:123
       }
     ],
     merchendise: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_df43378185.jpg',
-        title: 'U Keep Me Warm',
-        description: 'Captivating, cosy, coffee. Gift your loved ones this Starbucks Gift Card.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113650_1.jpg',
+        title: 'Ceramic Pink and White Mug - 295ml',
+        description: 'Ceramic hand painted mug with glossy glaze interior and regu...',
+        price:123
       }
     ],
     coffee: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_df43378185.jpg',
-        title: 'U Keep Me Warm',
-        description: 'Captivating, cosy, coffee. Gift your loved ones this Starbucks Gift Card.'
+        image: '	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113633.jpg',
+        title: 'Tribute Blend',
+        description: 'Tribute blend is a tribute to accomplishments of coffee prod...',
+        price:123
       }
     ],
     eat: [
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7c6f7c64_3f89_4ba2_9af8_45fc6d94ad35_df43378185.jpg',
-        title: 'U Keep Me Warm',
-        description: 'Captivating, cosy, coffee. Gift your loved ones this Starbucks Gift Card.'
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/103599_1.jpg',
+        title: 'Almond Biscotti',
+        ptag:"PER SERVE (50 g) - 409 kCal",
+        description: 'Delicious on its own or a perfect pairing with your favorite...',
+        price:123
       },
       {
-        image: 'https://preprodtsbstorage.blob.core.windows.net/cms/uploads/97ee3280_2f05_43ad_bd94_f5c184d4f502_1_2d1b049023.png',
-        title: 'Congrats',
-        description: 'Coffee. Cheer. Celebrate. Enjoy each of your special moments with Starbucks.'
-      }
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/112672.jpg',
+        title: 'Raksha Bandhan Chocolate Box',
+        ptag:"PER SERVE (50 g) - 409 kCal",
+        description: 'A box of chocolates with 2 pieces each of Tiramisu, Dark cho..',
+        price:123
+      },
     ]
   };
 
@@ -152,27 +168,47 @@ function Order() {
 
 
 
-      <div className='h-[200px] mt-3'>
-        <div className='flex space-x-20 justify-center'>
-          {pages[page].map((item, index) => (
-            <div key={index} className='h-[189px] w-[302px] bg-[#DDDDDD] shadow-gray-500 flex gap-5'>
-              <img className='h-[100px] w-[140] mt-6 ml-[-50px] rounded-md' src={item.image} alt='' />
 
-              <div className='h-auto  border  mt-6 text-left space-y-2 '>
-                <div className='text-sm font-medium leading-4 text-[#000000] '>
-                  <p>{item.title}</p>
-                </div>
-                <div className='text-xs font-normal leading-4 text-[#212529]'>
-                  <p>{item.description}</p>
-                </div>
-                <div className='text-sm font-medium leading-4 '>
-                  <button className='rounded-lg bg-green-500 mt-8 text-[#ffff] h-8 w-20'>Add Item</button>
-                </div>
+
+<div className='flex space-x-20'>
+  {pages[page].map((item,index)=>(
+
+
+<div className='h-[200px] w-[350px] border border-black bg-white '>
+          <div className='flex ml-9'>
+            <div className='h-[80px] w-[150px] border border-black justify-start mt-4 rounded-lg '>
+              
+            <img className='h-[100px] w-[140] mt-6 ml-[-50px] rounded-md' src={item.image} alt='' />
+            </div>
+            <div className='p-5'>
+
+              <div>
+                <img src="https://www.starbucks.in/assets/icon/veg.svg" alt="" />
+                <div className='font-medium leading-7 text-start text-lg '> <span> {item.title}</span>  </div>
+
+                <div> <span>{item.description}</span>  </div>
+
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className='flex border border-black justify-around' >
+            <div>
+              <h4>₹{item.price}</h4>
+            </div>
+            <div>
+              <button className='bg-green-500  text-white rounded-lg w-20'>Add Cart</button>
+            </div>
+
+          </div>
+
+
         </div>
-      </div>
+  ))}
+        </div>
+
+
+        {/* _________________________________________________________________________________________________ */}
 
       <div className='text-2xl font-medium leading-7 '>
         <h1 className='mt-5 text-left ml-3 '>{page === 'food' && 'Food'}</h1>
