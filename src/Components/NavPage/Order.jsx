@@ -54,6 +54,7 @@ function Order() {
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113650_1.jpg',
         title: 'Ceramic Pink and White Mug - 295ml',
+        ptag:"PER SERVE (140 g) - 471 Kcal",
         description: 'Ceramic hand painted mug with glossy glaze interior and regu...',
         price: 123
       }
@@ -62,6 +63,7 @@ function Order() {
       {
         image: '	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113633.jpg',
         title: 'Tribute Blend',
+        ptag:"PER SERVE (140 g) - 471 Kcal",
         description: 'Tribute blend is a tribute to accomplishments of coffee prod...',
         price: 123
       }
@@ -93,7 +95,7 @@ function Order() {
     <div>
       <Navbars />
       <div className="h-[90px] w-[100%] border border-black bg-[#1E3932]">
-        <div className="h-[30px] w-[350px] mt-6 ml-20 flex gap-3">
+        <div className="h-fit w-[350px] mt-6 ml-20 flex gap-3">
           <img src="https://www.starbucks.in/assets/icon/Location%20icon%203.svg" alt="location images" />
           <input type="text" className="border border-t-0 border-l-0 border-r-0 border-b border-b-white hover:border-b-white focus:border-b-white bg-[#1E3932]" placeholder="No Store Selected" />
           <div className='flex gap-4 '>
@@ -174,7 +176,7 @@ function Order() {
         {pages[page].map((item, index) => (
 
 
-          <div className='h-[200px] w-[350px] border border-black bg-white '>
+          <div className='h-fit w-[350px] border border-black bg-white '>
             <div className='flex ml-9'>
               <div className='h-fit w-full border border-black justify-start mt-4 rounded-none '>
 
@@ -186,8 +188,10 @@ function Order() {
                 <div className='text-start'>
                   <img src="https://www.starbucks.in/assets/icon/veg.svg" alt="" />
                   <div className='font-medium leading-7 text-start text-lg '> <span> {item.title}</span>  </div>
-
-                  <div> <span>{item.description}</span>  </div>
+                  <div>
+                    <span>{item.ptag}</span>
+                  </div>
+                  <div className='font-thin leading-5'> <span>{item.description}</span>  </div>
 
                 </div>
               </div>
