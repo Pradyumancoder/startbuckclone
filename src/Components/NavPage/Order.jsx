@@ -133,12 +133,9 @@ function Order() {
               Drinks
             </button>
             <span className='ml-10 mt-4'>|</span>
-            <button className={`ml-5 hover:text-green-700 ${page === 'food' && 'text-green-700'}} onClick={() => handlePageChange('food')}>
+            <button className={`ml-5 hover:text-green-700 ${page === 'food' && 'text-green-700'}`} onClick={() => handlePageChange('food')}>
                    food </button>
-                    
-                     <button className={ml-5 hover:text-green-700 ${page === 'food' && 'text-green-700'}`} onClick={() => handlePageChange('food')}>
-              Food
-            </button>
+                
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'merchendise' && 'text-green-700'}`} onClick={() => handlePageChange('merchendise')}>
               Merchendise
