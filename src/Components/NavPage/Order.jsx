@@ -187,50 +187,29 @@ function Order() {
 
 
 
-      <div className='grid gap-5 grid-cols-3 grid-rows-6  h-fit m-auto w-[1200px]'>
-        {pages[page].map((item, index) => (
-
-
-          <div className='m-auto border h-[220px] bg-[#F9F9F9] hover:shadow-md'>
-            <div className='flex ml-9'>
-              <div className='h-[100px]  w-[160px] border border-black justify-start mt-2 rounded-none '>
-
-                <img className=' rounded-[6.5rem] ml-0 mt-0 ' src={item.image} alt='' />
-              </div>
-              <div className='p-5 h-[217px] border border-red-700 '>
-              
-
-                <div className='text-start'>
-                  <img src="https://www.starbucks.in/assets/icon/veg.svg" alt="" />
-                  <div className='font-medium leading-7 text-start text-lg '> <span> {item.title}</span>  </div>
-                  <div>
-                    <span>{item.ptag}</span>
-                  </div>
-                  <div className='font-thin leading-5'> <span>{item.description}</span>  </div>
-{/* ________________________________________________________________started button code_____________________________________________________________________ */}
-
-                  <div className='flex border border-black justify-around mt-3'>
-              <div>
-                <h4>₹{item.price}</h4>
-              </div>
-              <div>
-                <button className='bg-green-500  text-white rounded-lg w-20'>Add Cart</button>
-              </div>
-
-            </div>
-
-{/* _______________________________________________________________started button code end____________________________________________________________________________ */}
-
-                </div>
-              </div>
-            </div>
-
-           
-
-
+      <div className="flex justify-center items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl">
+    {pages[page].map((item, index) => (
+      <div className="bg-white rounded-lg p-4 shadow-md" key={index}>
+        <div className="flex justify-center">
+          <img className="w-32 h-32 rounded-full" src={item.image} alt="" />
+        </div>
+        <div className="mt-4">
+          <div className="flex items-center">
+            <img className="w-4 h-4 mr-1" src="https://www.starbucks.in/assets/icon/veg.svg" alt="Veg Icon" />
+            <h3 className="text-lg font-medium">{item.title}</h3>
           </div>
-        ))}
+          <p className="text-gray-500 text-sm">{item.description}</p>
+        </div>
+        <div className="mt-4 flex justify-between items-center">
+          <span className="text-lg font-bold">₹{item.price}</span>
+          <button className="bg-green-500 text-white rounded-lg px-4 py-2">Add to Cart</button>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
+
 
 
       {/* _________________________________________________________________________________________________ */}
