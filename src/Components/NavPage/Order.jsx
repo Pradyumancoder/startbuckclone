@@ -23,6 +23,20 @@ function Order() {
         ptag: "SHORT(237 Ml) .0 kcal",
         description: 'Rich in flavour, full-bodied espresso with hot water in true...',
         price: 123
+      },
+      {
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100501.jpg',
+        title: 'Java Chip Frappuccino',
+        ptag: "TALL(354 ML) .392 kcal",
+        description: 'We blend mocha sauce and Frappuccino® chips with Frappuccino....',
+        price: 123
+      },
+      {
+        image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100433.jpg',
+        title: 'Caffe Americano',
+        ptag: "SHORT(237 Ml) .0 kcal",
+        description: 'Rich in flavour, full-bodied espresso with hot water in true...',
+        price: 123
       }
     ],
     drinks: [
@@ -145,6 +159,7 @@ function Order() {
       </div>
       <div className='text-2xl font-medium leading-7 '>
         <h1 className='mt-5 text-left ml-3 '>{page === 'bestseller' && 'BestSeller'}</h1>
+        <p className='mt-2 text-left ml-3 text-sm m-0 font-[400] leading-[21px] color-[#212529]'>{page === 'bestseller'  && 'Everyones favorite Starbucks put together in a specially curated collection.'}</p>
 
       </div>
       <div className='text-2xl font-medium leading-7 '>
@@ -172,15 +187,15 @@ function Order() {
 
 
 
-      <div className='flex space-x-20'>
+      <div className='grid space-x-20 grid-cols-3 grid-rows-6  h-fit'>
         {pages[page].map((item, index) => (
 
 
-          <div className='h-fit w-[350px] border border-black bg-white '>
+          <div className='m-auto border border-black bg-white '>
             <div className='flex ml-9'>
-              <div className='h-fit w-full border border-black justify-start mt-4 rounded-none '>
+              <div className='h-fit p-6 w-full border border-black justify-start mt-4 rounded-none '>
 
-                <img className='  rounded-[6.5rem] ml-0 mt-0 ' src={item.image} alt='' />
+                <img className=' rounded-[6.5rem] ml-0 mt-0 ' src={item.image} alt='' />
               </div>
               <div className='p-5'>
               
