@@ -135,7 +135,7 @@ function Order() {
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'food' && 'text-green-700'}} onClick={() => handlePageChange('food')}>
                    food </button>
-                    <span className='ml-10 mt-4'>|</span>
+                    
                      <button className={ml-5 hover:text-green-700 ${page === 'food' && 'text-green-700'}`} onClick={() => handlePageChange('food')}>
               Food
             </button>
@@ -214,31 +214,9 @@ function Order() {
 
       {/* _________________________________________________________________________________________________ */}
 
-      <div className='text-2xl font-medium leading-7 '>
-        <h1 className='mt-5 text-left ml-3 '>{page === 'food' && 'Food'}</h1>
-      </div>
+    
       <div className='flex-grow h-px bg-gray-400 mt-5'></div>
-      <div className='h-[300px] '>
-        <div className='mt-6 ml-32'>
-          {page === 'food' && (
-            <div className='h-[189px] w-[302px] bg-[#DDDDDD] shadow-gray-500 flex gap-5'>
-              <img className='h-[100px] w-[140px] mt-6 ml-[-50px] rounded-md' src={pages.food[0].image} alt='' />
-
-              <div className='h-auto  border  mt-6 text-left space-y-2 '>
-                <div className='text-sm font-medium leading-4 text-[#000000] '>
-                  <p>{pages.food[0].title}</p>
-                </div>
-                <div className='text-xs font-normal leading-4 text-[#212529]'>
-                  <p>{pages.food[0].description}</p>
-                </div>
-                <div className='text-sm font-medium leading-4 '>
-                  <button className='rounded-lg bg-green-500 mt-8 text-[#ffff] h-8 w-20'>Add Item</button>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
+    
       <FooterP />
     </div>
   )
