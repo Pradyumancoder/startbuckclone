@@ -187,17 +187,17 @@ function Order() {
 
 
 
-      <div className='grid space-x-20 grid-cols-3 grid-rows-6  h-fit'>
+      <div className='grid gap-5 grid-cols-3 grid-rows-6  h-fit m-auto w-[1200px]'>
         {pages[page].map((item, index) => (
 
 
-          <div className='m-auto border border-black bg-white '>
+          <div className='m-auto border h-[220px] bg-[#F9F9F9] hover:shadow-md'>
             <div className='flex ml-9'>
-              <div className='h-fit p-6 w-full border border-black justify-start mt-4 rounded-none '>
+              <div className='h-[100px]  w-[160px] border border-black justify-start mt-2 rounded-none '>
 
                 <img className=' rounded-[6.5rem] ml-0 mt-0 ' src={item.image} alt='' />
               </div>
-              <div className='p-5'>
+              <div className='p-5 h-[217px] border border-red-700 '>
               
 
                 <div className='text-start'>
@@ -207,12 +207,9 @@ function Order() {
                     <span>{item.ptag}</span>
                   </div>
                   <div className='font-thin leading-5'> <span>{item.description}</span>  </div>
+{/* ________________________________________________________________started button code_____________________________________________________________________ */}
 
-                </div>
-              </div>
-            </div>
-
-            <div className='flex border border-black justify-around' >
+                  <div className='flex border border-black justify-around mt-3'>
               <div>
                 <h4>₹{item.price}</h4>
               </div>
@@ -221,6 +218,14 @@ function Order() {
               </div>
 
             </div>
+
+{/* _______________________________________________________________started button code end____________________________________________________________________________ */}
+
+                </div>
+              </div>
+            </div>
+
+           
 
 
           </div>
