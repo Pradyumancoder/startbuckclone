@@ -13,41 +13,41 @@ function Order() {
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100501.jpg',
         title: 'Java Chip Frappuccino',
-        ptag:"TALL(354 ML) .392 kcal",
+        ptag: "TALL(354 ML) .392 kcal",
         description: 'We blend mocha sauce and Frappuccino® chips with Frappuccino....',
-        price:123
+        price: 123
       },
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100433.jpg',
         title: 'Caffe Americano',
-        ptag:"SHORT(237 Ml) .0 kcal",
+        ptag: "SHORT(237 Ml) .0 kcal",
         description: 'Rich in flavour, full-bodied espresso with hot water in true...',
-        price:123
+        price: 123
       }
     ],
     drinks: [
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113842.jpg',
         title: 'Belgium Chocolate Latte',
-        ptag:"SHORT(237 ML) .235 Kcal",
+        ptag: "SHORT(237 ML) .235 Kcal",
         description: 'Espresso with richly flavoured Belgium chocolate sauce, moch...',
-        price:123
+        price: 123
       },
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113842.jpg',
         title: 'Belgium Chocolate Latte',
-        ptag:"SHORT(237 ML) .235 Kcal",
+        ptag: "SHORT(237 ML) .235 Kcal",
         description: 'Espresso with richly flavoured Belgium chocolate sauce, moch...',
-        price:123
+        price: 123
       },
     ],
     food: [
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/104108.jpg',
         title: 'Chilli Cheese Toast',
-        ptag:"PER SERVE (140 g) - 471 Kcal",
+        ptag: "PER SERVE (140 g) - 471 Kcal",
         description: 'Cheesy and fiery snack on a toasted French-style baguette, t...',
-        price:123
+        price: 123
       }
     ],
     merchendise: [
@@ -55,7 +55,7 @@ function Order() {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113650_1.jpg',
         title: 'Ceramic Pink and White Mug - 295ml',
         description: 'Ceramic hand painted mug with glossy glaze interior and regu...',
-        price:123
+        price: 123
       }
     ],
     coffee: [
@@ -63,23 +63,23 @@ function Order() {
         image: '	https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113633.jpg',
         title: 'Tribute Blend',
         description: 'Tribute blend is a tribute to accomplishments of coffee prod...',
-        price:123
+        price: 123
       }
     ],
     eat: [
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/103599_1.jpg',
         title: 'Almond Biscotti',
-        ptag:"PER SERVE (50 g) - 409 kCal",
+        ptag: "PER SERVE (50 g) - 409 kCal",
         description: 'Delicious on its own or a perfect pairing with your favorite...',
-        price:123
+        price: 123
       },
       {
         image: 'https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/112672.jpg',
         title: 'Raksha Bandhan Chocolate Box',
-        ptag:"PER SERVE (50 g) - 409 kCal",
+        ptag: "PER SERVE (50 g) - 409 kCal",
         description: 'A box of chocolates with 2 pieces each of Tiramisu, Dark cho..',
-        price:123
+        price: 123
       },
     ]
   };
@@ -109,8 +109,8 @@ function Order() {
             <span> <img src="https://www.starbucks.in/assets/icon/left-icon.svg" alt="left" /></span>
 
             <button className={`ml-5 hover:text-green-700 ${page === 'bestseller' && 'text-green-700'}`} onClick={() => handlePageChange('bestseller')}>
-              
-              Bestseller 
+
+              Bestseller
             </button>
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'drinks' && 'text-green-700'}`} onClick={() => handlePageChange('drinks')}>
@@ -125,7 +125,7 @@ function Order() {
             </button>
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'merchendise' && 'text-green-700'}`} onClick={() => handlePageChange('merchendise')}>
-              Merchendise 
+              Merchendise
             </button>
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'merchendise' && 'text-green-700'}`} onClick={() => handlePageChange('coffee')}>
@@ -133,7 +133,7 @@ function Order() {
             </button>
             <span className='ml-10 mt-4'>|</span>
             <button className={`ml-5 hover:text-green-700 ${page === 'merchendise' && 'text-green-700'}`} onClick={() => handlePageChange('eat')}>
-              Ready To Eat 
+              Ready To Eat
             </button>
             <div>
               <span> <img src="https://www.starbucks.in/assets/icon/right-icon.svg" alt="right" /></span>
@@ -170,45 +170,46 @@ function Order() {
 
 
 
-<div className='flex space-x-20'>
-  {pages[page].map((item,index)=>(
+      <div className='flex space-x-20'>
+        {pages[page].map((item, index) => (
 
 
-<div className='h-[200px] w-[350px] border border-black bg-white '>
-          <div className='flex ml-9'>
-            <div className='h-[80px] w-[150px] border border-black justify-start mt-4 rounded-lg '>
+          <div className='h-[200px] w-[350px] border border-black bg-white '>
+            <div className='flex ml-9'>
+              <div className='h-fit w-full border border-black justify-start mt-4 rounded-none '>
+
+                <img className='  rounded-[6.5rem] ml-0 mt-0 ' src={item.image} alt='' />
+              </div>
+              <div className='p-5'>
               
-            <img className='h-[100px] w-[140] mt-6 ml-[-50px] rounded-md' src={item.image} alt='' />
-            </div>
-            <div className='p-5'>
 
-              <div>
-                <img src="https://www.starbucks.in/assets/icon/veg.svg" alt="" />
-                <div className='font-medium leading-7 text-start text-lg '> <span> {item.title}</span>  </div>
+                <div className='text-start'>
+                  <img src="https://www.starbucks.in/assets/icon/veg.svg" alt="" />
+                  <div className='font-medium leading-7 text-start text-lg '> <span> {item.title}</span>  </div>
 
-                <div> <span>{item.description}</span>  </div>
+                  <div> <span>{item.description}</span>  </div>
 
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className='flex border border-black justify-around' >
-            <div>
-              <h4>₹{item.price}</h4>
+            <div className='flex border border-black justify-around' >
+              <div>
+                <h4>₹{item.price}</h4>
+              </div>
+              <div>
+                <button className='bg-green-500  text-white rounded-lg w-20'>Add Cart</button>
+              </div>
+
             </div>
-            <div>
-              <button className='bg-green-500  text-white rounded-lg w-20'>Add Cart</button>
-            </div>
+
 
           </div>
+        ))}
+      </div>
 
 
-        </div>
-  ))}
-        </div>
-
-
-        {/* _________________________________________________________________________________________________ */}
+      {/* _________________________________________________________________________________________________ */}
 
       <div className='text-2xl font-medium leading-7 '>
         <h1 className='mt-5 text-left ml-3 '>{page === 'food' && 'Food'}</h1>
@@ -235,7 +236,7 @@ function Order() {
           )}
         </div>
       </div>
-<FooterP/>
+      <FooterP />
     </div>
   )
 }
