@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbars from '../Navbar/Navbars'
+import FooterP from '../Footer/FooterP'
 
 function Pay() {
   return (
@@ -73,16 +74,12 @@ function Pay() {
 
 
       </div>
+
+      <div className='mt-5'>
+      <FooterP/>
+      </div>
     </div>
   )
 }
 
 export default Pay
-
-
-{/* <span className='' >
-              <img  className='absolute right-0 ' src="https://www.starbucks.in/assets/icon/Group%20625.svg" alt="small-tree-right-side" />
-            </span>
-            <span>
-              <img className='mt-[200px]' src="	https://www.starbucks.in/assets/images/green-left-leaf.svg" alt="left-side-image" />
-            </span> */}
