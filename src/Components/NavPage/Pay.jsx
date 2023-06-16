@@ -31,31 +31,31 @@ function Pay() {
                   <h1>₹0.00</h1>
                 </span>
               </div>
-         {/* last div of firs box */}
-          
-          <div className='h-5 flex gap-[150px] cursor-pointer mt-3'> 
-           <h5 className='text-[10px] leading-[12px] font-medium text-[#BDBDBD]'>Updated at 02.650 15/06/23</h5>
+              {/* last div of firs box */}
 
-           <span className='flex gap-2 '>
-           <img src="	https://www.starbucks.in/assets/icon/Maskrefresh.svg" alt="refres-icon" />
-           <img src="https://www.starbucks.in/assets/icon/Masksetting.svg" alt="Setting-icon" />
-           </span>
-          </div>
+              <div className='h-5 flex gap-[150px] cursor-pointer mt-3'>
+                <h5 className='text-[10px] leading-[12px] font-medium text-[#BDBDBD]'>Updated at 02.650 15/06/23</h5>
+
+                <span className='flex gap-2 '>
+                  <img src="	https://www.starbucks.in/assets/icon/Maskrefresh.svg" alt="refres-icon" />
+                  <img src="https://www.starbucks.in/assets/icon/Masksetting.svg" alt="Setting-icon" />
+                </span>
+              </div>
 
             </div>
 
-{/* _________________________________________________second-box_____________________________________________________________ */}
-           
-<div className='h-[300px] w-[325px] border border-white bg-slate-100 relative'>
-  <img src="https://www.starbucks.in/assets/images/bg_pattern.svg" alt="second-img-with-background" />
-  <div className='absolute inset-0 flex flex-col justify-center items-center '>
-    <h1 style={{ whiteSpace: 'nowrap' }} className='text-black'>Add New Starbucks Card</h1>
-    <span className='flex justify-center items-center bg-black w-[110px] rounded-md'>
-      <img src="https://www.starbucks.in/assets/icon/add_circle_darkened_green.svg" alt="add-card-icon" />
-      <button className='text-white ml-2 '>Add Card</button>
-    </span>
-  </div>
-</div>
+            {/* _________________________________________________second-box_____________________________________________________________ */}
+
+            <div className='h-[300px] w-[325px] border border-white bg-slate-100 relative cursor-pointer'>
+              <img src="https://www.starbucks.in/assets/images/bg_pattern.svg" alt="second-img-with-background" />
+              <div className='absolute inset-0 flex flex-col justify-center items-center '>
+                <h1 style={{ whiteSpace: 'nowrap' }} className='text-black'>Add New Starbucks Card</h1>
+                <span className='flex justify-center items-center bg-black w-[110px] rounded-md'>
+                  <img src="https://www.starbucks.in/assets/icon/add_circle_darkened_green.svg" alt="add-card-icon" />
+                  <button className='text-white ml-2 '>Add Card</button>
+                </span>
+              </div>
+            </div>
 
 
 
