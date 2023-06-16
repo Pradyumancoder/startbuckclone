@@ -44,9 +44,22 @@ function Pay() {
 
             </div>
 
-            <div className='h-[300px] w-[325px] border border-white bg-slate-100'>
-              <img src="https://www.starbucks.in/assets/images/bg_pattern.svg" alt="second-img-with-background" />
-            </div>
+{/* _________________________________________________second-box_____________________________________________________________ */}
+           
+<div className='h-[300px] w-[325px] border border-white bg-slate-100 relative'>
+  <img src="https://www.starbucks.in/assets/images/bg_pattern.svg" alt="second-img-with-background" />
+  <div className='absolute inset-0 flex flex-col justify-center items-center '>
+    <h1 style={{ whiteSpace: 'nowrap' }} className='text-black'>Add New Starbucks Card</h1>
+    <span className='flex justify-center items-center bg-black w-[110px] rounded-md'>
+      <img src="https://www.starbucks.in/assets/icon/add_circle_darkened_green.svg" alt="add-card-icon" />
+      <button className='text-white ml-2 '>Add Card</button>
+    </span>
+  </div>
+</div>
+
+
+
+
 
           </div>
 
