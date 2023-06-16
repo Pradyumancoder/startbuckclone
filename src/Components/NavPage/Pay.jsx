@@ -22,7 +22,7 @@ function Pay() {
             <div className='h-[300px] w-[325px]  bg-slate-100 '>
               <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="fist-img" />
 
-              <div className='flex gap-[210px] mt-[20px]' >
+              <div className='flex gap-[210px] mt-[20px] cursor-pointer' >
                 <span className='left-0 '>
                   <h2 className='leading-4 text-[14px] font-medium text-[#006241]'>Aroma</h2>
                   <p>*5867</p>
@@ -33,8 +33,13 @@ function Pay() {
               </div>
          {/* last div of firs box */}
           
-          <div className='h-5 border border-yellow-400'> 
-           <h5>Updated at 02.650</h5>
+          <div className='h-5 flex gap-[150px] cursor-pointer mt-3'> 
+           <h5 className='text-[10px] leading-[12px] font-medium text-[#BDBDBD]'>Updated at 02.650 15/06/23</h5>
+
+           <span className='flex gap-2 '>
+           <img src="	https://www.starbucks.in/assets/icon/Maskrefresh.svg" alt="refres-icon" />
+           <img src="https://www.starbucks.in/assets/icon/Masksetting.svg" alt="Setting-icon" />
+           </span>
           </div>
 
             </div>
