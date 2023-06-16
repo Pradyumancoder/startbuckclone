@@ -5,7 +5,7 @@ function Pay() {
   return (
     <div>
       <Navbars />
-      <div className='h-fit w-[100%] border border-red-700 mt-5'>
+      <div className='h-fit w-[100%] mt-5'>
         <div className='h-[50px] w-[80%] justify-between bg-[#B2D396] flex gap-5 m-auto'>
           <button className='text-[16px] leading-[19px] text-[#1e3932] font-medium'>My Starbucks Cards</button>
           <div className='gap-3 flex text-center'>
@@ -16,21 +16,27 @@ function Pay() {
 
           </div>
         </div>
-        <div className='h-[350px] w-[100%] border border-orange-500 bg-[#1E3932]'>
-          <div className='flex m-auto gap-8 h-[250px] w-[800px]'>
+        <div className='h-[350px] w-[100%] bg-[#1E3932]'>
+          <div className='flex m-auto gap-8 h-[250px] w-[800px] p-5'>
 
-            <div className='h-[300px] w-[325px] border border-white bg-slate-100 '>
+            <div className='h-[300px] w-[325px]  bg-slate-100 '>
               <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="fist-img" />
 
-              <div className='flex border border-black'>
-                <span className='left-0'>
-                  <h2>Aroma</h2>
+              <div className='flex gap-[210px] mt-[20px]' >
+                <span className='left-0 '>
+                  <h2 className='leading-4 text-[14px] font-medium text-[#006241]'>Aroma</h2>
                   <p>*5867</p>
                 </span>
-                <span className=''>
-                  <h1>₹ 0.00</h1>
+                <span className='mt-[7px] text-[24px] leading-[29px] font-medium text-[#006241] '>
+                  <h1>₹0.00</h1>
                 </span>
               </div>
+         {/* last div of firs box */}
+          
+          <div className='h-5 border border-yellow-400'> 
+           <h5>Updated at 02.650</h5>
+          </div>
+
             </div>
 
             <div className='h-[300px] w-[325px] border border-white bg-slate-100'>
