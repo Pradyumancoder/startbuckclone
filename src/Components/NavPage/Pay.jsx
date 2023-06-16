@@ -17,7 +17,7 @@ function Pay() {
           </div>
         </div>
         <div className='h-[350px] w-[100%] bg-[#1E3932]'>
-          <div className='flex m-auto gap-8 h-[250px] w-[800px] p-5'>
+          <div className='flex m-auto gap-8 h-[250px] w-[800px] p-5 cursor-pointer'>
 
             <div className='h-[300px] w-[325px]  bg-slate-100 '>
               <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="fist-img" />
@@ -31,7 +31,7 @@ function Pay() {
                   <h1>₹0.00</h1>
                 </span>
               </div>
-              {/* last div of firs box */}
+              {/* last div of first box */}
 
               <div className='h-5 flex gap-[150px] cursor-pointer mt-3'>
                 <h5 className='text-[10px] leading-[12px] font-medium text-[#BDBDBD]'>Updated at 02.650 15/06/23</h5>
