@@ -19,8 +19,18 @@ function Pay() {
         <div className='h-[350px] w-[100%] border border-orange-500 bg-[#1E3932]'>
           <div className='flex m-auto gap-8 h-[250px] w-[800px]'>
 
-            <div className='h-[300px] w-[325px] border border-white bg-slate-100'>
+            <div className='h-[300px] w-[325px] border border-white bg-slate-100 '>
               <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="fist-img" />
+
+              <div className='flex border border-black'>
+                <span className='left-0'>
+                  <h2>Aroma</h2>
+                  <p>*5867</p>
+                </span>
+                <span className=''>
+                  <h1>₹ 0.00</h1>
+                </span>
+              </div>
             </div>
 
             <div className='h-[300px] w-[325px] border border-white bg-slate-100'>
