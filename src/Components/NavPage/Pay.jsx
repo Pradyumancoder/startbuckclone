@@ -58,20 +58,9 @@ function Pay() {
               </div>
             </div>
 
-
-
-
-
           </div>
 
-
-
-
         </div>
-
-
-
-
 
       </div>
 
