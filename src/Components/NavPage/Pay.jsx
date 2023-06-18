@@ -62,11 +62,11 @@ function Pay() {
 
         </div>
         <div className='h-[280px] w-[100%] border border-red-700 rounded-tr-3xl rounded-tl-3xl mt-[-16px] bg-white'>
-            <div className='h-[50px] w-[60%] border border-black m-auto mt-4 rounded-l-3xl rounded-r-3xl '>
-              <div className='h-[35px] w-[80%] m-auto flex justify-between mt-2'>
-               <button className='h-[30px] w-[120px] border border-black bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Pay at Store</button>
-               <button className='h-[30px] w-[120px] border border-black bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Load Card</button>
-                <button className='h-[30px] w-[120px] border border-black bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Past Transaction</button>
+            <div className='h-[45px] w-[50%] border border-black m-auto mt-4 rounded-l-3xl rounded-r-3xl '>
+              <div className='h-[45px] w-[98%] m-auto flex justify-between mt-0.5 '>
+               <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Pay at Store</button>
+               <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Load Card</button>
+                <button className='h-[37px] w-[160px] bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Past Transaction</button>
 
               </div>
             </div>
