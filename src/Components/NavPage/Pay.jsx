@@ -61,6 +61,11 @@ function Pay() {
           </div>
 
         </div>
+        <div className='h-[280px] w-[100%] border border-red-700 rounded-tr-3xl rounded-tl-3xl mt-[-16px] bg-white'>
+            <div className='h-[50px] w-[80%] border border-black m-auto mt-4'>
+
+            </div>
+        </div>
 
       </div>
 
