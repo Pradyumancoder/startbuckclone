@@ -24,16 +24,36 @@ function Pay() {
           <h1>Scan the Barcode and Pay at the Store</h1>
           <div className='m-auto w-[200px] h-[200px] p-5'>
 
-          {barcode && <QRCode value={barcode} />}
-          <p className='p-2 mr-8'>{barcode}</p>
+            {barcode && <QRCode value={barcode} />}
+            <p className='p-2 mr-8'>{barcode}</p>
           </div>
         </div>
       );
     } else if (selectedOption === 'loadCard') {
       return (
         <div>
-          <h1>Add Money to Your Card</h1>
-          <img src="" alt="" />
+          <h1></h1>
+          <div className='w-[100%] h-[50px] bg-[#F2F0EB] mt-4'>
+
+            {/* button-box-started-from-hear  */}
+
+            <div className='w-[400px] m-1 leading-[21px] text-[14px] font-medium flex gap-5 ml-14'>
+            <button className='text-[#00754a]'> Manual Reload</button>
+            <span className='mt-2'>  | </span>
+            <button> Transfer Balance</button>
+            </div>
+
+          </div>
+            {/* button-box-end-from-hear  */}
+               
+               <form action="">
+             <h3>ENTER AMOUNT</h3>
+             <input type="text" />
+
+
+
+               </form>
+
         </div>
       );
     } else if (selectedOption === 'pastTransaction') {
@@ -101,7 +121,7 @@ function Pay() {
             </div>
           </div>
         </div>
-        <div className='h-[280px] w-[100%] border border-red-700 rounded-tr-3xl rounded-tl-3xl mt-[-16px] bg-white'>
+        <div className='h-fit w-[100%] border border-red-700 rounded-tr-3xl rounded-tl-3xl mt-[-16px] bg-white'>
           <div className='h-[45px] w-[50%] border border-black m-auto mt-4 rounded-l-3xl rounded-r-3xl '>
             <div className='h-[45px] w-[98%] m-auto flex justify-between mt-0.5 '>
               <button
