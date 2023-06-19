@@ -62,20 +62,34 @@ function Pay() {
 
         </div>
         <div className='h-[280px] w-[100%] border border-red-700 rounded-tr-3xl rounded-tl-3xl mt-[-16px] bg-white'>
-            <div className='h-[45px] w-[50%] border border-black m-auto mt-4 rounded-l-3xl rounded-r-3xl '>
-              <div className='h-[45px] w-[98%] m-auto flex justify-between mt-0.5 '>
-               <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Pay at Store</button>
-               <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Load Card</button>
-                <button className='h-[37px] w-[160px] bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Past Transaction</button>
 
-              </div>
+          {/* {/* _______________________________________________button-div-started_________________________________________________________________ */}
+
+          <div className='h-[45px] w-[50%] border border-black m-auto mt-4 rounded-l-3xl rounded-r-3xl '>
+            <div className='h-[45px] w-[98%] m-auto flex justify-between mt-0.5 '>
+              <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Pay at Store</button>
+              <button className='h-[37px] w-[160px]  bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Load Card</button>
+              <button className='h-[37px] w-[160px] bg-[#00754A] rounded-l-3xl rounded-r-3xl  text-white'>Past Transaction</button>
+
             </div>
+          </div>
+          {/* ____________________________________________________button-div-code-ended______________________________________________________ */}
+
+
+          {/* ______________________________________________________Dynamic-design-started________________________________________________________ */}
+           
+           {/* This Is First Button Design started  */}
+          <div className=''>
+           <h1>Scan the Barcode and Pay at the Store</h1>
+           <img src="" alt="" />
+          </div>
+
         </div>
 
       </div>
 
       <div className='mt-5'>
-      <FooterP/>
+        <FooterP />
       </div>
     </div>
   )
