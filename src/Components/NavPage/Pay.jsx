@@ -38,29 +38,61 @@ function Pay() {
             {/* button-box-started-from-hear  */}
 
             <div className='w-[400px] m-1 leading-[21px] text-[14px] font-medium flex gap-5 ml-14'>
-            <button className='text-[#00754a]'> Manual Reload</button>
-            <span className='mt-2'>  | </span>
-            <button> Transfer Balance</button>
+              <button className='text-[#00754a]'> Manual Reload</button>
+              <span className='mt-2'>  | </span>
+              <button> Transfer Balance</button>
             </div>
 
           </div>
-            {/* button-box-end-from-hear  */}
-               
-               <form action="">
-             <h3>ENTER AMOUNT</h3>
-             <input type="text" />
+          {/* button-box-end-from-hear  */}
+
+          <form action="" className='mt-9'>
+            <h3 className='mr-[960px]'>ENTER AMOUNT</h3>
+            <input type="text" placeholder='for e.g ₹500,₹1500,₹2000' className='w-[600px] border-t-0 border-r-0 border-l-0 mr-[500px]' />
+            <div className='w-[500px] h-[50px] flex justify-around ml-[120px]'>
+              <button> +₹500 </button>
+              <button> +₹1000</button>
+              <button> +₹1500</button>
+              <button> +₹2000</button>
+
+            </div>
+
+            {/* input and add amount section box code ended */}
 
 
+            {/* started Add amount box and payment box */}
+            {/* first-box-in-this-amout-added-will-show  */}
+            <div className='h-[43px] w-[100%] bg-[#00754A] rounded-t-lg text-[white] flex justify-around'>
+              <h3 className='m-2'>Reload Card With</h3>
+              <h4 className='m-2'>₹0.00</h4>
+            </div>
 
-               </form>
+            {/* second-box-in-this-i-clicked-reload-button  */}
+
+            <div className='h-[60px] w-[100%] bg-[#006241] flex justify-around text-white'>
+              <span>
+                <h3>Pay With</h3>
+                <h4>OTHER PAYMENT METHODS </h4>
+              </span>
+
+              <span>
+                <button className='h-[30px] w-28 border border-black rounded-3xl m-4'>Reload</button>
+              </span>
+
+            </div>
+
+            {/* second-box-code-end */}
+
+          </form>
 
         </div>
       );
     } else if (selectedOption === 'pastTransaction') {
       return (
         <div>
-          <h1>Past Transactions</h1>
-          <img src="" alt="" />
+  
+          <img className='m-auto' src="https://www.starbucks.in/assets/images/notransactions.svg" alt="empty-image" />
+          <h1>No transaction found <span className='text-red-600'> !</span> </h1>
         </div>
       );
     } else {
