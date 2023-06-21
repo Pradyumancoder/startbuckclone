@@ -7,6 +7,13 @@ function Pay() {
   const [selectedOption, setSelectedOption] = useState('');
   const [barcode, setBarcode] = useState('');
   const [amountAdded, setAmountAdded] = useState(0); // Initialize with 0
+  const [Amount,setAmount]=useState('')
+  const [TextValue,SetTextValue]=useState('')
+
+  const HandleChange=(event)=>{
+    setAmount(event.target.value)
+    SetTextValue(event.target.value)
+  }
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -50,7 +57,10 @@ function Pay() {
 
           <form action='' className='mt-9'>
             <h3 className='mr-[960px]'>ENTER AMOUNT</h3>
-            <input type='text' placeholder='for e.g ₹500,₹1500,₹2000' className='w-[600px] border-t-0 border-r-0 border-l-0 mr-[500px]' />
+            <input type='text'
+            onChange={{HandleChange}}
+            value={Amount}
+            placeholder='for e.g ₹500,₹1500,₹2000'  className='w-[600px] border-t-0 border-r-0 border-l-0 mr-[500px]' />
             <div className='w-[500px] h-[50px] flex justify-around ml-[120px]'>
               <button onClick={(event) => handleAddAmount(500, event)}>+₹500</button>
               <button onClick={(event) => handleAddAmount(1000, event)}>+₹1000</button>
@@ -64,7 +74,7 @@ function Pay() {
             {/* first-box-in-this-amout-added-will-show  */}
             <div className='h-[43px] w-[100%] bg-[#00754A] rounded-t-lg text-[white] flex justify-around'>
               <h3 className='m-2'>Reload Card With</h3>
-              <h4 className='m-2'>₹{amountAdded !== false ? amountAdded.toFixed(2) : '0.00'}</h4>
+              <h4 className='m-2'>₹{amountAdded !== false ? amountAdded.toFixed(2) : '0.00'} {TextValue}</h4>
             </div>
 
             {/* second-box-in-this-i-clicked-reload-button  */}
