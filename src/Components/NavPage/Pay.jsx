@@ -26,8 +26,12 @@ function Pay() {
 
   const handleAddAmount = (amount, event) => {
     event.preventDefault(); // Prevent form submission and page refresh
-    setAmountAdded(amount); // Set the selected amount
+    const updatedAmount = parseFloat(Amount) + amount; // Calculate the updated amount
+    setAmount(updatedAmount.toString()); // Update the input box value
+    setTextValue(updatedAmount.toString()); // Update the text value for display
+    setAmountAdded(updatedAmount); // Set the selected amount
   };
+
 
   const renderContent = () => {
     if (selectedOption === 'payAtStore') {
@@ -68,6 +72,7 @@ function Pay() {
               <button onClick={(event) => handleAddAmount(1000, event)}>+₹1000</button>
               <button onClick={(event) => handleAddAmount(1500, event)}>+₹1500</button>
               <button onClick={(event) => handleAddAmount(2000, event)}>+₹2000</button>
+
             </div>
 
             {/* input and add amount section box code ended */}
@@ -76,9 +81,9 @@ function Pay() {
             <div className='h-[43px] w-[100%] bg-[#00754A] rounded-t-lg text-[white] flex justify-around'>
               <h3 className='m-2'>Reload Card With</h3>
               <h4 className='m-2'>
-            ₹{TextValue ? TextValue : (amountAdded !== 0 ? amountAdded.toFixed(2) : '0.00')}
-          </h4>       
-               </div>
+                ₹{TextValue ? TextValue : (amountAdded !== 0 ? amountAdded.toFixed(2) : '0.00')}
+              </h4>
+            </div>
 
             {/* second-box-in-this-i-clicked-reload-button  */}
             {amountAdded > 0 && ( // Show the payment box only if an amount is added
