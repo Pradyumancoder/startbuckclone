@@ -63,7 +63,7 @@ function Pay() {
             <input
               type='text'
               onChange={handleChange}
-              value={Amount}
+              value={Amount ? Amount : setTextValue}
               placeholder='for e.g ₹500,₹1500,₹2000'
               className='w-[600px] border-t-0 border-r-0 border-l-0 mr-[500px]'
             />
@@ -81,7 +81,7 @@ function Pay() {
             <div className='h-[43px] w-[100%] bg-[#00754A] rounded-t-lg text-[white] flex justify-around'>
               <h3 className='m-2'>Reload Card With</h3>
               <h4 className='m-2'>
-                ₹{TextValue ? TextValue : (amountAdded !== 0 ? amountAdded.toFixed(2) : '0.00')}
+                ₹{TextValue ? TextValue : (amountAdded == 0 ? amountAdded.toFixed(2) : '0.00')}
               </h4>
             </div>
 
